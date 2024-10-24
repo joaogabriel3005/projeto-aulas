@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Aula 03</title>
+</head>
+<body>
+	<center><font face="Arial" color="brown"  size="10"> Formulário de Contato</font></center>
+</br>
+	<form action="formulario.html" method="post">
+	<label for="nome">Nome: </label>
+	<input type="text"  id="nome"  name="nome" required>
+<br/>
+<br/>
+<form action="processar_formulario.php" method="post">
+	<label for="email">E- mail: </label>
+	<input type="text"  id="nome"  name="nome" required>
+<br/>
+<br/>
+<form action="processar_formulario.php" method="post">
+	<label for="celular">Celular: </label>
+	<input type="number"  id=""  name="celular" placeholder="(xx) xxxxx-xxxx">
+	<form action="processar_formulario.php" method="post">
+	<label for="telefone">Telefone: </label>
+	<input type="number"  id=""  name="Telefone" placeholder="(xx) xxxxx-xxxx">
+	
+	<br/><br/>
+<select name="select_genero">
+<option value="option_genero">Feminino</option>
+<option value="option_genero">Masculino</option>
+<option value="option_genero">Outro</option>
+</select name>
+</select>
+<br/>
+</br>
+	<lable for"data_nascimento">Data de Nascimento:  </lable>
+	<input type="date" id= "data_nascimento"
+name="data_nascimento">
+	<label for "idade">Idade:  </label>
+	<input type="number" id="idade" name="idade" min="0"
+</br>
+</br>
+	</br>
+	<lable for="idioma">Escolha o idioma que possui maior fluência:  </lable>
+	<input type="radio"  id="idioma"  name="idioma"
+value="espanhol">Espanhol
+	<input type="radio"  id="idioma"  name="idioma"
+value="ingles">Inglês
+	<input type="radio"  id="idioma"  name="idioma"
+value="italiano">Italiano
+	<input type="radio"  id="idioma"  name="idioma"
+value="portugues"> Português
+	<input type="radio"  id="idioma"  name="idioma"
+value="outro">Outro
+</br>
+</br>
+	<label for="outro_idioma">O outro idioma é: </label>
+<input type="text" id="outro_idioma" name="outro_idioma" placeholder="Insira o outro idioma...">
+<br/>
+<br/>
+<label for="upload_arquivo">Insira o seu currículo: </label>
+<input type="file" id="upload_arquivo" name="upload_arquivo">
+	<br/><br/>
+	<lable for="termo_uso">Leia atentamente o nosso termo de uso:     </lable>
+	<iframe src="termo_uso.pdf"  width="100%"  height="400">Termo de Uso</iframe>
+	
+	<input type="checkbox"  id="termo_uso"  name="termo_uso" required>
+	<lable for="termos_uso">Aceito termo de Uso</lable>
+	
+
+<br/>
+<button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
